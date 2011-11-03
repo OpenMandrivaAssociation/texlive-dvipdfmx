@@ -1,3 +1,9 @@
+# revision 23089
+# category TLCore
+# catalog-ctan /dviware/dvipdfmx/dvipdfmx.tar.gz
+# catalog-date 2011-03-22 20:35:08 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-dvipdfmx
 Version:	20110322
 Release:	1
@@ -54,6 +60,7 @@ well, of course, as the package Readme.
 %doc %{_texmfdir}/doc/dvipdfmx/dvipdfmx-special.tex
 %doc %{_mandir}/man1/extractbb.1*
 %doc %{_texmfdir}/doc/man/man1/extractbb.man1.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,3 +73,5 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
