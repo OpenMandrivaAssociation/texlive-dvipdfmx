@@ -1,4 +1,4 @@
-# revision 24483
+# revision 24659
 # category TLCore
 # catalog-ctan /dviware/dvipdfmx/dvipdfmx.tar.gz
 # catalog-date 2011-03-22 20:35:08 +0100
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-dvipdfmx
 Version:	20110322
-Release:	2
+Release:	3
 Summary:	An extended version of dvipdfm
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
@@ -20,8 +20,6 @@ Requires(post):	texlive-kpathsea
 Requires:	texlive-glyphlist
 Requires:	texlive-dvipdfmx-def
 Requires:	texlive-dvipdfmx.bin
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Dvipdfmx (formerly dvipdfm-cjk) is a development of dvipdfm
@@ -35,19 +33,19 @@ users are advised to consult the documentation of dvipdfm (as
 well, of course, as the package Readme.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
