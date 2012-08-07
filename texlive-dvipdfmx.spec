@@ -1,12 +1,12 @@
-# revision 25337
+# revision 26765
 # category TLCore
 # catalog-ctan /dviware/dvipdfmx/dvipdfmx.tar.gz
-# catalog-date 2011-03-22 20:35:08 +0100
+# catalog-date 2012-04-21 10:57:19 +0200
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-dvipdfmx
-Version:	20110322
-Release:	5
+Version:	20120421
+Release:	1
 Summary:	An extended version of dvipdfm
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
@@ -49,6 +49,7 @@ well, of course, as the package Readme.
 %{_texmfdir}/fonts/cmap/dvipdfmx/UTF8-UCS2
 %{_texmfdir}/fonts/map/dvipdfmx/cid-x.map
 %{_texmfdir}/fonts/map/dvipdfmx/ckx.map
+%{_texmfdir}/fonts/map/dvipdfmx/updmap/kanjix.map
 %{_tlpkgdir}/tlpostcode/dvipdfmx.pl
 %doc %{_texmfdir}/doc/dvipdfmx/dvipdfmx-special.pdf
 %doc %{_texmfdir}/doc/dvipdfmx/dvipdfmx-special.tex
