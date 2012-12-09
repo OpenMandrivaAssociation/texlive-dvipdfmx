@@ -69,3 +69,33 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+
+
+%changelog
+* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120421-1
++ Revision: 812238
+- Update to latest release.
+
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110322-5
++ Revision: 779438
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110322-4
++ Revision: 751218
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110322-3
++ Revision: 739747
+- texlive-dvipdfmx
+
+* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110322-2
++ Revision: 729648
+- texlive-dvipdfmx
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110322-1
++ Revision: 718282
+- texlive-dvipdfmx
+- texlive-dvipdfmx
+- texlive-dvipdfmx
+- texlive-dvipdfmx
+
