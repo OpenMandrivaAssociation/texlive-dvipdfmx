@@ -1,11 +1,11 @@
-# revision 26765
+# revision 31830
 # category TLCore
 # catalog-ctan /dviware/dvipdfmx/dvipdfmx.tar.gz
-# catalog-date 2012-04-21 10:57:19 +0200
+# catalog-date 2013-09-22 09:06:20 +0200
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-dvipdfmx
-Version:	20120421
+Version:	20130922
 Release:	1
 Summary:	An extended version of dvipdfm
 Group:		Publishing
@@ -42,19 +42,38 @@ well, of course, as the package Readme.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdir}/dvipdfmx/dvipdfmx.cfg
-%{_texmfdir}/fonts/cmap/README
-%{_texmfdir}/fonts/cmap/dvipdfmx/EUC-UCS2
-%{_texmfdir}/fonts/cmap/dvipdfmx/README
-%{_texmfdir}/fonts/cmap/dvipdfmx/UTF8-UCS2
-%{_texmfdir}/fonts/map/dvipdfmx/cid-x.map
-%{_texmfdir}/fonts/map/dvipdfmx/ckx.map
-%{_texmfdir}/fonts/map/dvipdfmx/updmap/kanjix.map
+%{_texmfdistdir}/dvipdfmx/dvipdfmx.cfg
+%{_texmfdistdir}/fonts/cmap/dvipdfmx/EUC-UCS2
+%{_texmfdistdir}/fonts/cmap/dvipdfmx/README
+%{_texmfdistdir}/fonts/cmap/dvipdfmx/UTF8-UCS2
+%{_texmfdistdir}/fonts/map/dvipdfmx/cid-x.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/ckx.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/updmap/kanjix.map
 %{_tlpkgdir}/tlpostcode/dvipdfmx.pl
-%doc %{_texmfdir}/doc/dvipdfmx/dvipdfmx-special.pdf
-%doc %{_texmfdir}/doc/dvipdfmx/dvipdfmx-special.tex
+%doc %{_texmfdistdir}/doc/dvipdfm/Makefile
+%doc %{_texmfdistdir}/doc/dvipdfm/dvipdfm.pdf
+%doc %{_texmfdistdir}/doc/dvipdfm/dvipdfm.tex
+%doc %{_texmfdistdir}/doc/dvipdfm/mwicks.bb
+%doc %{_texmfdistdir}/doc/dvipdfm/mwicks.jpeg
+%doc %{_texmfdistdir}/doc/dvipdfm/sample.tex
+%doc %{_texmfdistdir}/doc/dvipdfm/something.bb
+%doc %{_texmfdistdir}/doc/dvipdfm/something.eps
+%doc %{_texmfdistdir}/doc/dvipdfm/something.fig
+%doc %{_texmfdistdir}/doc/dvipdfm/something.pdf
+%doc %{_texmfdistdir}/doc/dvipdfm/transistor.bb
+%doc %{_texmfdistdir}/doc/dvipdfm/transistor.eps
+%doc %{_texmfdistdir}/doc/dvipdfm/transistor.fig
+%doc %{_texmfdistdir}/doc/dvipdfm/transistor.pdf
+%doc %{_texmfdistdir}/doc/dvipdfmx/dvipdfmx-special.pdf
+%doc %{_texmfdistdir}/doc/dvipdfmx/dvipdfmx-special.tex
+%doc %{_mandir}/man1/dvipdfm.1*
+%doc %{_texmfdistdir}/doc/man/man1/dvipdfm.man1.pdf
+%doc %{_mandir}/man1/dvipdft.1*
+%doc %{_texmfdistdir}/doc/man/man1/dvipdft.man1.pdf
+%doc %{_mandir}/man1/ebb.1*
+%doc %{_texmfdistdir}/doc/man/man1/ebb.man1.pdf
 %doc %{_mandir}/man1/extractbb.1*
-%doc %{_texmfdir}/doc/man/man1/extractbb.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/extractbb.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,36 +85,6 @@ well, of course, as the package Readme.
 mkdir -p %{buildroot}%{_tlpkgdir}
 cp -fpar tlpkg/tlpostcode %{buildroot}%{_tlpkgdir}
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120421-1
-+ Revision: 812238
-- Update to latest release.
-
-* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110322-5
-+ Revision: 779438
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110322-4
-+ Revision: 751218
-- Rebuild to reduce used resources
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110322-3
-+ Revision: 739747
-- texlive-dvipdfmx
-
-* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110322-2
-+ Revision: 729648
-- texlive-dvipdfmx
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110322-1
-+ Revision: 718282
-- texlive-dvipdfmx
-- texlive-dvipdfmx
-- texlive-dvipdfmx
-- texlive-dvipdfmx
-
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
