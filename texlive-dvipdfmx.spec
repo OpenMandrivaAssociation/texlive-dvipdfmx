@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-dvipdfmx
 Version:	20130922
-Release:	4
+Release:	5
 Summary:	An extended version of dvipdfm
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
