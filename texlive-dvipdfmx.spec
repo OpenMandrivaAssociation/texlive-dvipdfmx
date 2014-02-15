@@ -1,4 +1,4 @@
-# revision 31830
+# revision 32380
 # category TLCore
 # catalog-ctan /dviware/dvipdfmx/dvipdfmx.tar.gz
 # catalog-date 2013-09-22 09:06:20 +0200
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-dvipdfmx
 Version:	20130922
-Release:	5
+Release:	6
 Summary:	An extended version of dvipdfm
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
