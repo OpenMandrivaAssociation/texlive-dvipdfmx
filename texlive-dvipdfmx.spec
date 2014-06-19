@@ -1,4 +1,4 @@
-# revision 32380
+# revision 33771
 # category TLCore
 # catalog-ctan /dviware/dvipdfmx/dvipdfmx.tar.gz
 # catalog-date 2013-09-22 09:06:20 +0200
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-dvipdfmx
 Version:	20130922
-Release:	7
+Release:	8
 Summary:	An extended version of dvipdfm
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
@@ -68,12 +68,16 @@ well, of course, as the package Readme.
 %doc %{_texmfdistdir}/doc/dvipdfmx/dvipdfmx-special.tex
 %doc %{_mandir}/man1/dvipdfm.1*
 %doc %{_texmfdistdir}/doc/man/man1/dvipdfm.man1.pdf
+%doc %{_mandir}/man1/dvipdfmx.1*
+%doc %{_texmfdistdir}/doc/man/man1/dvipdfmx.man1.pdf
 %doc %{_mandir}/man1/dvipdft.1*
 %doc %{_texmfdistdir}/doc/man/man1/dvipdft.man1.pdf
 %doc %{_mandir}/man1/ebb.1*
 %doc %{_texmfdistdir}/doc/man/man1/ebb.man1.pdf
 %doc %{_mandir}/man1/extractbb.1*
 %doc %{_texmfdistdir}/doc/man/man1/extractbb.man1.pdf
+%doc %{_mandir}/man1/xdvipdfmx.1*
+%doc %{_texmfdistdir}/doc/man/man1/xdvipdfmx.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
