@@ -1,12 +1,6 @@
-# revision 33771
-# category TLCore
-# catalog-ctan /dviware/dvipdfmx/dvipdfmx.tar.gz
-# catalog-date 2013-09-22 09:06:20 +0200
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-dvipdfmx
-Version:	20130922
-Release:	11
+Version:	20170507
+Release:	1
 Summary:	An extended version of dvipdfm
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
@@ -42,30 +36,12 @@ well, of course, as the package Readme.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/dvipdfmx/dvipdfmx.cfg
-%{_texmfdistdir}/fonts/cmap/dvipdfmx/EUC-UCS2
-%{_texmfdistdir}/fonts/cmap/dvipdfmx/README
-%{_texmfdistdir}/fonts/cmap/dvipdfmx/UTF8-UCS2
-%{_texmfdistdir}/fonts/map/dvipdfmx/cid-x.map
-%{_texmfdistdir}/fonts/map/dvipdfmx/ckx.map
-%{_texmfdistdir}/fonts/map/dvipdfmx/updmap/kanjix.map
+%{_texmfdistdir}/dvipdfmx
+%{_texmfdistdir}/fonts/cmap/dvipdfmx
+%{_texmfdistdir}/fonts/map/dvipdfmx
 %{_tlpkgdir}/tlpostcode/dvipdfmx.pl
-%doc %{_texmfdistdir}/doc/dvipdfm/Makefile
-%doc %{_texmfdistdir}/doc/dvipdfm/dvipdfm.pdf
-%doc %{_texmfdistdir}/doc/dvipdfm/dvipdfm.tex
-%doc %{_texmfdistdir}/doc/dvipdfm/mwicks.bb
-%doc %{_texmfdistdir}/doc/dvipdfm/mwicks.jpeg
-%doc %{_texmfdistdir}/doc/dvipdfm/sample.tex
-%doc %{_texmfdistdir}/doc/dvipdfm/something.bb
-%doc %{_texmfdistdir}/doc/dvipdfm/something.eps
-%doc %{_texmfdistdir}/doc/dvipdfm/something.fig
-%doc %{_texmfdistdir}/doc/dvipdfm/something.pdf
-%doc %{_texmfdistdir}/doc/dvipdfm/transistor.bb
-%doc %{_texmfdistdir}/doc/dvipdfm/transistor.eps
-%doc %{_texmfdistdir}/doc/dvipdfm/transistor.fig
-%doc %{_texmfdistdir}/doc/dvipdfm/transistor.pdf
-%doc %{_texmfdistdir}/doc/dvipdfmx/dvipdfmx-special.pdf
-%doc %{_texmfdistdir}/doc/dvipdfmx/dvipdfmx-special.tex
+%doc %{_texmfdistdir}/doc/dvipdfm
+%doc %{_texmfdistdir}/doc/dvipdfmx
 %doc %{_mandir}/man1/dvipdfm.1*
 %doc %{_texmfdistdir}/doc/man/man1/dvipdfm.man1.pdf
 %doc %{_mandir}/man1/dvipdfmx.1*
