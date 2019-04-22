@@ -1,6 +1,6 @@
 Name:		texlive-dvipdfmx
-Version:	20180331
-Release:	2
+Version:	20190107
+Release:	1
 Summary:	An extended version of dvipdfm
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
