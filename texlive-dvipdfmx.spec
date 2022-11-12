@@ -1,12 +1,12 @@
 Name:		texlive-dvipdfmx
-Version:	20190327
+Version:	61101
 Release:	1
 Summary:	An extended version of dvipdfm
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfmx.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfmx.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfmx.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfmx.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +27,12 @@ users are advised to consult the documentation of dvipdfm (as
 well, of course, as the package Readme.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -57,7 +57,7 @@ well, of course, as the package Readme.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
