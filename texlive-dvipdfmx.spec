@@ -1,5 +1,5 @@
 Name:		texlive-dvipdfmx
-Version:	66203
+Version:	69127
 Release:	1
 Summary:	An extended version of dvipdfm
 Group:		Publishing
