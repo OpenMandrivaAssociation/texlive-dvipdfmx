@@ -3,7 +3,7 @@ Version:	71675
 Release:	1
 Summary:	An extended version of dvipdfm
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
+URL:		https://www.ctan.org/tex-archive/dviware/dvipdfmx/dvipdfmx.tar.gz
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfmx.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfmx.doc.r%{version}.tar.xz
