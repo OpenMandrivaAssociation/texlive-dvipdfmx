@@ -12,8 +12,6 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfmx.r%{tl_r
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfmx.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-BuildRequires:	texlive-tlpkg
-%texlive_base_requires
 Requires:	texlive(dvipdfmx.bin)
 Requires:	texlive(extractbb)
 Requires:	texlive(glyphlist)
